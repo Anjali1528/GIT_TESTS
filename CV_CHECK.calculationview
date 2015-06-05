@@ -6,7 +6,7 @@
 <dataSources>
   <DataSource id="PIPE_LINK_GAS_AR" type="DATA_BASE_TABLE">
     <viewAttributes allViewAttributes="true"/>
-    <columnObject schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR"/>
+    <columnObject schemaName="CONTENT1" columnObjectName="PIPE_LINK_GAS_AR"/>
   </DataSource>
 </dataSources>
 <calculationViews/>
