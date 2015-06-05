@@ -6,4 +6,4 @@ Changed in IDE
 Changed after password change
 Changed in IDE after Password Change
 This is not a check
-This is to check differrent settings
+This is to check IDE settings
