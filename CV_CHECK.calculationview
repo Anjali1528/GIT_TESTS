@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_CHECK" applyPrivilegeType="ANALYTIC_PRIVILEGE" dataCategory="CUBE" dimensionType="STANDARD" schemaVersion="2.3" defaultClient="$$client$$" visibility="reportingEnabled" outputViewType="Aggregation" calculationScenarioType="TREE_BASED" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_CHECK"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PIPE_LINK_GAS_AR" type="DATA_BASE_TABLE">
+    <viewAttributes allViewAttributes="true"/>
+    <columnObject schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR"/>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="PIPE_LINK_GAS_AR">
+  <attributes>
+    <attribute id="Failure_Date" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Failure_Date"/>
+      <keyMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Failure_Date"/>
+    </attribute>
+    <attribute id="Manufacturer_id" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Manufacturer_id"/>
+      <keyMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Manufacturer_id"/>
+    </attribute>
+    <attribute id="Pipe_Type" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Pipe_Type"/>
+      <keyMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Pipe_Type"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="Avg_Density" order="1" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Avg_Density"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Avg_Density"/>
+    </measure>
+    <measure id="Avg_Flow_Rate_Abv_Norm" order="2" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Avg_Flow_Rate_Abv_Norm"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Avg_Flow_Rate_Abv_Norm"/>
+    </measure>
+    <measure id="Avg_Humidity_Perc" order="3" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Avg_Humidity_Perc"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Avg_Humidity_Perc"/>
+    </measure>
+    <measure id="Avg_Throughput" order="4" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Avg_Throughput"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Avg_Throughput"/>
+    </measure>
+    <measure id="Failed_in_Last_3m" order="5" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Failed_in_Last_3m"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Failed_in_Last_3m"/>
+    </measure>
+    <measure id="Incidents_12months" order="7" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Incidents_12months"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Incidents_12months"/>
+    </measure>
+    <measure id="Location_id" order="8" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Location_id"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Location_id"/>
+    </measure>
+    <measure id="Pipe_Length" order="10" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Pipe_Length"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Pipe_Length"/>
+    </measure>
+    <measure id="Pipe_id" order="12" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Pipe_id"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Pipe_id"/>
+    </measure>
+    <measure id="Rptd_Damage_Ind" order="13" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Rptd_Damage_Ind"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Rptd_Damage_Ind"/>
+    </measure>
+    <measure id="Water_Exposure" order="14" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Water_Exposure"/>
+      <measureMapping schemaName="CONTENT" columnObjectName="PIPE_LINK_GAS_AR" columnName="Water_Exposure"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
