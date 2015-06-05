@@ -3,3 +3,4 @@ First file via GIT
 Changed again
 Changed in GIT HUB
 Changed in IDE
+Changed after password change
