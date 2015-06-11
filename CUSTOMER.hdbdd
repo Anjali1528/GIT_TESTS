@@ -1,0 +1,26 @@
+namespace hanae2e.anjali.cl726.CopyCopyOfwebide;
+
+@Schema: 'HANAE2E_WS3' 
+
+context CUSTOMER {
+   type myKeyType: String(60);
+   
+   @Catalog: { tableType : #ROW}
+   Entity CUSTOMER_ENTITY {
+   
+       key CUSTOMERNUMBER: Integer  ;
+	 CUSTOMERNAME: hana.VARCHAR(50); 
+	 CONTACTLASTNAME: hana.VARCHAR(50)  ;
+	 CONTACTFIRSTNAME: hana.VARCHAR(50)  ;
+	 PHONE: hana.VARCHAR(50)  ;
+	 ADDRESSLINE1: hana.VARCHAR(50)  ;
+	 ADDRESSLINE2: hana.VARCHAR(50);
+	 CITY: hana.VARCHAR(50)  ;
+	 STATE: hana.VARCHAR(50);
+	 POSTALCODE: hana.VARCHAR(15);
+	 COUNTRY: hana.VARCHAR(50)  ;
+	 SALESREPEMPLOYEENUMBER: Integer ;
+	 CREDITLIMIT: DecimalFloat;
+	 SALUTATION: hana.NCHAR(30);
+   };
+};
