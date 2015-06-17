@@ -1,5 +1,3 @@
-var connName = $.db.getSessionUser();
+var connName = $.session.getUsername();
 
 $.response.setBody (connName);
-
-//This is a test

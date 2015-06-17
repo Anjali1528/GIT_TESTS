@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:id="864c96867686bafda7513e3f271afa4c" name="TestFlow" generateProcedure="true" generateTask="false" targetSchema="HE2E_USER">
+  <annotations xmi:id="5f69f9fadfab223f2e9b7206af666132" key="sap.afm.layout">
+    <annotations xmi:id="9fbd6bf3005c6d3b11730f7733efaef3" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="acb3570b983d3028cb123afb31b8bd4a" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="9f79d011392d18941753be6da74091e3" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="ef8da4b858f7f17349e313f73276f832" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="5f5dac3e10e0afa30eae13163b7e0964" key="sap.afm.palette">
+    <annotations xmi:id="715639894e0ce0fca9c0ae65bc19d8b8" key="additions" value="">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="a2cfca91dd18c80aed1f945a9be89680" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="d5e4695f7baabc0963e33145252107bc" key="sap.afm.nodeInputs">
+    <annotations/>
+  </annotations>
+  <annotations xmi:id="c4ff61b2dcae81a4c92e296e189d8cdc" key="sap.afm.nodeOutputs">
+    <annotations xmi:id="8ee258210b7d35f5306f388a149f65e0" key="TESTFLOWGRAPH" value="">
+    </annotations>
+  </annotations>
+  <nodes xsi:type="flowgraph:DataNode" xmi:id="bbb3a7cc154bd6647cd38fa5f93dedba" name="_TA_MessagesWithKeyIndex" type="DATABASE_TABLE" authoringSchemaName="CHIMNANI" catalogObjectName="$TA_MessagesWithKeyIndex" dataLayout="COLUMN" truncateTable="false">
+    <annotations xmi:id="467db91d8bdae69912371d13b52d2f55" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="c65efd69cfb0a357328540169b5a6e4d" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="9dd3a102e64788cd1570fbc385af9075" key="sap.afm.layout">
+      <annotations xmi:id="350d815498b0df344a5985a6e5c890b4" key="x" value="244">
+      </annotations>
+      <annotations xmi:id="a48ff741313359f052a9d35c104515cc" key="y" value="173">
+      </annotations>
+      <annotations xmi:id="2a226c9b1831e8ef7759de535a7fd9bc" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="0fad463de08630e624999d32418de3d5" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="358e15b20d380408ef13ed45136bdb41" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="0145a5f820e907c7ca906c037304a16f" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="d756375d7334c79312db33027c0ca330" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="082f7756cd34852c795c722bf1dd7a5e" key="_TA_MessagesWithKeyIndex_Output" value="Filter1_Input">
+      </annotations>
+    </annotations>
+    <outputs name="_TA_MessagesWithKeyIndex_Output" kind="TABLE" xmi:id="60c03f65f604df2816dec4c98aa8ba53">
+      <attributes xmi:id="e7cf68343e1e018fd689a54bc33f4c8b" name="SNO" type="INTEGER" length="0" scale="0" nullable="false">
+        <annotations xmi:id="1b71c59ddf029539f1d823dd197fb870" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="e72315c705190cbce22f0db2ccb6bdf8" name="TA_RULE" type="NVARCHAR" length="200" scale="0" nullable="false">
+        <annotations xmi:id="a8e14af148041e56a0c4b490221af4d9" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="949f99aec5a7c2090c3e6c0611f2ffb4" name="TA_COUNTER" type="BIGINT" length="0" scale="0" nullable="false">
+        <annotations xmi:id="1c47d6db3be17bca7d45d3b451ceb4c2" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="cddd14b03c433c7baf6e85e7e38545fc" name="TA_TOKEN" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="38e0c3815713d1f3c05e96261d403acf" name="TA_LANGUAGE" type="NVARCHAR" length="2" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="e6fec5512e5abcf53c06a2904a633543" name="TA_TYPE" type="NVARCHAR" length="100" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="49414e95962deaf4d62835d30d95a2d5" name="TA_NORMALIZED" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="3942d328baf02d37ab10ed50076fccfc" name="TA_STEM" type="NVARCHAR" length="5000" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="fe53320e9bfcfc0d067fc9eac0551a12" name="TA_PARAGRAPH" type="INTEGER" length="0" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="54a6ca801a49791485d353f94fcffc0c" name="TA_SENTENCE" type="INTEGER" length="0" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="ab1c735fbbe57a2340bb13f45ca77f3f" name="TA_CREATED_AT" type="TIMESTAMP" length="0" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="008f7a7455ffcf423204cebd90f85370" name="TA_OFFSET" type="BIGINT" length="0" scale="0" nullable="true">
+      </attributes>
+      <attributes xmi:id="a2023fd077f2c78a9a4b051fd7c5960e" name="TA_PARENT" type="BIGINT" length="0" scale="0" nullable="true">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xsi:type="flowgraph:FilterNode" xmi:id="a0efbdbd617cff7b83ab9bc36403f624" name="Filter1" expression="&quot;Filter1_Input&quot;.&quot;TA_COUNTER&quot; = 2">
+    <annotations xmi:id="b6fb85913ca551a54395de7c93dfc107" key="sap.afm.description" value="">
+    </annotations>
+    <annotations xmi:id="03b0eabbff5d6889a71f6614829222d1" key="sap.afm.displayName" value="Filter">
+    </annotations>
+    <annotations xmi:id="3fba4780ca884a1b7152319feb7ff838" key="sap.afm.layout">
+      <annotations xmi:id="38d907887c14caaab32ec9852671a1ff" key="x" value="520">
+      </annotations>
+      <annotations xmi:id="60259a77039572859422121ddf37f89d" key="y" value="212">
+      </annotations>
+      <annotations xmi:id="fede7bc96c7ca75688ccbdb10db035d0" key="width" value="100">
+      </annotations>
+      <annotations xmi:id="03244046c2f1bb3c116964a147f8d83f" key="height" value="84">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="38de5ee2a0c1f308c9a91f7a19e753eb" key="sap.afm.nodeType" value="FilterNode">
+    </annotations>
+    <annotations xmi:id="581a0e42449953aa81eb2bfe7ee25d36" key="sap.afm.nodeInputs">
+      <annotations xmi:id="8aeee7eee27c791649c3251a2177f557" key="Filter1_Input" value="_TA_MessagesWithKeyIndex_Output">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="f41ca5ac7b106e744fb34f4d37038b1b" key="sap.afm.nodeOutputs">
+      <annotations xmi:id="ffdf0adc18ed86d3a7857e3d1a4c3763" key="Filter1_Output" value="_TA_MessagesWithKeyIndex0">
+      </annotations>
+      <annotations xmi:id="9a0c8aa494d97162ad0f95a30da66a7f" key="Filter1_Output" value="TESTFLOWGRAPH">
+      </annotations>
+    </annotations>
+    <inputs name="Filter1_Input" xmi:id="36bc130dcca512239557fa5fb7e77423" kind="TABLE">
+      <attributes xmi:id="b2fd5357caa0e7ad12147c55af7f44c6" name="SNO" type="INTEGER" length="0" nullable="false" scale="0">
+        <annotations xmi:id="e15c1073c16a1c1230f23bb5333dc2a3" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="64c274316ec6dd0b1b33deba97677588" name="TA_RULE" type="NVARCHAR" length="200" nullable="false" scale="0">
+        <annotations xmi:id="da1720371da210793225ae6e150f566f" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="226006f504bb2c449e8587530346b14f" name="TA_COUNTER" type="BIGINT" length="0" nullable="false" scale="0">
+        <annotations xmi:id="cad86997e0b0c8ac7fb86845cec9ed0d" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="a000d76c446c29ac02bb59d1be8ecdb9" name="TA_TOKEN" type="NVARCHAR" length="5000" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="31f440c74d40c3526e7c97041a1d5002" name="TA_LANGUAGE" type="NVARCHAR" length="2" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="fb8599a83b627a6272727aa77d3ee662" name="TA_TYPE" type="NVARCHAR" length="100" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="b0ef94a3a0b74186f7cb0d4075ac9b8d" name="TA_NORMALIZED" type="NVARCHAR" length="5000" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="8650c21bee8d43fc5fe9fed2049e75ff" name="TA_STEM" type="NVARCHAR" length="5000" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="80a3fdee53a7e19e3ce7935456d9cfc6" name="TA_PARAGRAPH" type="INTEGER" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="a6dc0fa8d8186e9ef7572fd0af6cf58f" name="TA_SENTENCE" type="INTEGER" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="0bfc31c3b716bd244fd605fdd6ad8dfb" name="TA_CREATED_AT" type="TIMESTAMP" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="bbe0fbfb1b89903162a18ed9d260cc8c" name="TA_OFFSET" type="BIGINT" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="799512e9f7910b817b8ad476b0b04613" name="TA_PARENT" type="BIGINT" length="0" nullable="true" scale="0">
+      </attributes>
+    </inputs>
+    <outputs name="Filter1_Output" xmi:id="aba22b8f00aad108019e1f66624666b7" kind="TABLE">
+      <attributes xmi:id="4222ec287b61caa69945f166c7fea58d" name="SNO" type="INTEGER" length="0" nullable="false" scale="0" expression="&quot;Filter1_Input&quot;.&quot;SNO&quot;">
+        <annotations xmi:id="e79b1425059ea36f953dfb2c1df668ce" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="837dc57d2de2b971a12dc25a4b0342c2" name="TA_RULE" type="NVARCHAR" length="200" nullable="false" scale="0" expression="&quot;Filter1_Input&quot;.&quot;TA_RULE&quot;">
+        <annotations xmi:id="cfff2bef73eb1d10fcc43c36e8be0634" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="a279273583799ec7c7ad460464a7fd05" name="TA_COUNTER" type="BIGINT" length="0" nullable="false" scale="0" expression="&quot;Filter1_Input&quot;.&quot;TA_COUNTER&quot;">
+        <annotations xmi:id="31d63390959658a3d1316170b7ad5524" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="2feacb257514fe7b1b0f007537b84130" name="TA_TOKEN" type="NVARCHAR" length="5000" nullable="true" scale="0" expression="&quot;Filter1_Input&quot;.&quot;TA_TOKEN&quot;">
+      </attributes>
+      <attributes xmi:id="f40bf4bcd3eb944e47d12a9bc45c9340" name="TA_LANGUAGE" type="NVARCHAR" length="2" nullable="true" scale="0" expression="&quot;Filter1_Input&quot;.&quot;TA_LANGUAGE&quot;">
+      </attributes>
+      <attributes xmi:id="ec904541c90344575eaf9bffdb9ebcce" name="TA_TYPE" type="NVARCHAR" length="100" nullable="true" scale="0" expression="&quot;Filter1_Input&quot;.&quot;TA_TYPE&quot;">
+      </attributes>
+      <attributes xmi:id="84f54a119de2b77ceab7171cd69b9ef5" name="TA_NORMALIZED" type="NVARCHAR" length="5000" nullable="true" scale="0" expression="&quot;Filter1_Input&quot;.&quot;TA_NORMALIZED&quot;">
+      </attributes>
+      <attributes xmi:id="6ed78ad8d74efdb6036f197faf8489bb" name="TA_STEM" type="NVARCHAR" length="5000" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="82f84fb9fb86cd821f0e648e118fc11c" name="TA_PARAGRAPH" type="INTEGER" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="cdb4dee6e36b374cc9391bb456b480f7" name="TA_SENTENCE" type="INTEGER" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="dee9a52d84a9640f3cf13115e5ca064c" name="TA_CREATED_AT" type="TIMESTAMP" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="66083fb64046d39b60484927333f5332" name="TA_OFFSET" type="BIGINT" length="0" nullable="true" scale="0">
+      </attributes>
+      <attributes xmi:id="7ec6b05bcbfa31f04d3e326140ee0820" name="TA_PARENT" type="BIGINT" length="0" nullable="true" scale="0">
+      </attributes>
+    </outputs>
+    <tableMappings xmi:id="4f9d25b2f4631ee8faec61e8c6b8cdff" source="36bc130dcca512239557fa5fb7e77423" target="aba22b8f00aad108019e1f66624666b7">
+      <attributeMappings source="8650c21bee8d43fc5fe9fed2049e75ff" target="6ed78ad8d74efdb6036f197faf8489bb" xmi:id="3041c0bab932748188613fbba9df095a">
+      </attributeMappings>
+      <attributeMappings source="80a3fdee53a7e19e3ce7935456d9cfc6" target="82f84fb9fb86cd821f0e648e118fc11c" xmi:id="cf689142af6bc9f0956233aad8250c1c">
+      </attributeMappings>
+      <attributeMappings source="a6dc0fa8d8186e9ef7572fd0af6cf58f" target="cdb4dee6e36b374cc9391bb456b480f7" xmi:id="177fd5e719b897e90331eed9f81e1299">
+      </attributeMappings>
+      <attributeMappings source="0bfc31c3b716bd244fd605fdd6ad8dfb" target="dee9a52d84a9640f3cf13115e5ca064c" xmi:id="18019b8c24c20227a0df1a693b60ca84">
+      </attributeMappings>
+      <attributeMappings source="bbe0fbfb1b89903162a18ed9d260cc8c" target="66083fb64046d39b60484927333f5332" xmi:id="2d0d214d697bfe03144e5366bf6a527d">
+      </attributeMappings>
+      <attributeMappings source="799512e9f7910b817b8ad476b0b04613" target="7ec6b05bcbfa31f04d3e326140ee0820" xmi:id="d45f518312b72b0f9f982f285f187949">
+      </attributeMappings>
+    </tableMappings>
+  </nodes>
+  <tableMappings xmi:id="2d879b600fc615d317012e6f5406cb5a" source="60c03f65f604df2816dec4c98aa8ba53" target="36bc130dcca512239557fa5fb7e77423">
+    <attributeMappings source="e7cf68343e1e018fd689a54bc33f4c8b" target="b2fd5357caa0e7ad12147c55af7f44c6" xmi:id="13c9ae50cbd1e9c2b56e4993011402d6">
+    </attributeMappings>
+    <attributeMappings source="e72315c705190cbce22f0db2ccb6bdf8" target="64c274316ec6dd0b1b33deba97677588" xmi:id="bc406447b44c5c3ec83e1804a0cfb98d">
+    </attributeMappings>
+    <attributeMappings source="949f99aec5a7c2090c3e6c0611f2ffb4" target="226006f504bb2c449e8587530346b14f" xmi:id="74d317b61458d456c68cd2929d5bb908">
+    </attributeMappings>
+    <attributeMappings source="cddd14b03c433c7baf6e85e7e38545fc" target="a000d76c446c29ac02bb59d1be8ecdb9" xmi:id="dcbae6d31d63f20b0acf818921d77805">
+    </attributeMappings>
+    <attributeMappings source="38e0c3815713d1f3c05e96261d403acf" target="31f440c74d40c3526e7c97041a1d5002" xmi:id="f9754f4a926dcea6579c85e26b36fa09">
+    </attributeMappings>
+    <attributeMappings source="e6fec5512e5abcf53c06a2904a633543" target="fb8599a83b627a6272727aa77d3ee662" xmi:id="035cde52f4281659336a19b2c4a18a3f">
+    </attributeMappings>
+    <attributeMappings source="49414e95962deaf4d62835d30d95a2d5" target="b0ef94a3a0b74186f7cb0d4075ac9b8d" xmi:id="d72a16142fcacadf32f7a7f264016ca2">
+    </attributeMappings>
+    <attributeMappings source="3942d328baf02d37ab10ed50076fccfc" target="8650c21bee8d43fc5fe9fed2049e75ff" xmi:id="151fab351495c520796917597fa5fd52">
+    </attributeMappings>
+    <attributeMappings source="fe53320e9bfcfc0d067fc9eac0551a12" target="80a3fdee53a7e19e3ce7935456d9cfc6" xmi:id="685971ef6b676f9a2db813c422ccc118">
+    </attributeMappings>
+    <attributeMappings source="54a6ca801a49791485d353f94fcffc0c" target="a6dc0fa8d8186e9ef7572fd0af6cf58f" xmi:id="91e2b03b037c97c4cf2d7d16fc730dd3">
+    </attributeMappings>
+    <attributeMappings source="ab1c735fbbe57a2340bb13f45ca77f3f" target="0bfc31c3b716bd244fd605fdd6ad8dfb" xmi:id="e81ef4b1c9e9bb6f1b3edc35244469cd">
+    </attributeMappings>
+    <attributeMappings source="008f7a7455ffcf423204cebd90f85370" target="bbe0fbfb1b89903162a18ed9d260cc8c" xmi:id="8e1087fb36ef1a1ba8b78fd0d9caf85c">
+    </attributeMappings>
+    <attributeMappings source="a2023fd077f2c78a9a4b051fd7c5960e" target="799512e9f7910b817b8ad476b0b04613" xmi:id="1b723b5063edce275a3f39c9e3325b61">
+    </attributeMappings>
+  </tableMappings>
+  <tableMappings xmi:id="8053f2f6cd019f45860c0cf9cddf7363" source="aba22b8f00aad108019e1f66624666b7" target="24e99919a8e55a842b2f81195a9f8dd6">
+    <attributeMappings source="4222ec287b61caa69945f166c7fea58d" target="0becc36f56f9aac283498e585dee976d" xmi:id="df2d531467fe39ffc22e13b8fe7c46b4">
+    </attributeMappings>
+    <attributeMappings source="837dc57d2de2b971a12dc25a4b0342c2" target="ef8d9ed05f478633b62026ab919556a9" xmi:id="df5bee8d4c081d113839c67d872d99f1">
+    </attributeMappings>
+    <attributeMappings source="a279273583799ec7c7ad460464a7fd05" target="686c73ffae4ccc91bc41e235e490d41b" xmi:id="30be0ffe608d0efc72d86cef484a69c4">
+    </attributeMappings>
+    <attributeMappings source="2feacb257514fe7b1b0f007537b84130" target="ef7fe6107cc32d153f599aa5a2539c35" xmi:id="1e1b6eb38b3299f0eb6b9453ae6e3012">
+    </attributeMappings>
+    <attributeMappings source="f40bf4bcd3eb944e47d12a9bc45c9340" target="c96ecc3da7a0fef0593d4c593ccbb63b" xmi:id="c3b9bcb7567ab857172c2f9ff6b2b995">
+    </attributeMappings>
+    <attributeMappings source="ec904541c90344575eaf9bffdb9ebcce" target="80136c4c73e441c3b3ac4dff6f00c775" xmi:id="bfe4ff066d5ef88d78ac26498a913ad6">
+    </attributeMappings>
+    <attributeMappings source="84f54a119de2b77ceab7171cd69b9ef5" target="d0cf89d19740a36a5d282425bf873ff3" xmi:id="f2134659d2d775bc38c97cc2b6fb642c">
+    </attributeMappings>
+    <attributeMappings source="6ed78ad8d74efdb6036f197faf8489bb" target="211bad3220977a88df6749f78f9857a9" xmi:id="453f16a1d23b7d936100d08cfed783c1">
+    </attributeMappings>
+    <attributeMappings source="82f84fb9fb86cd821f0e648e118fc11c" target="081f0f70445c8bc78c5050d4d9b24cb8" xmi:id="a90a828b483b4f44bb17c3b06918ee26">
+    </attributeMappings>
+    <attributeMappings source="cdb4dee6e36b374cc9391bb456b480f7" target="82f411f34c71c37e892be842fe18fe35" xmi:id="d53d8fbad8963bfe76baf06d3d7f68b7">
+    </attributeMappings>
+    <attributeMappings source="dee9a52d84a9640f3cf13115e5ca064c" target="fead02451db7cf4222883f754bc6c489" xmi:id="198da565b66d5e563f24136cf1c752d9">
+    </attributeMappings>
+    <attributeMappings source="66083fb64046d39b60484927333f5332" target="fdb6fe45657208f09309a653521d6438" xmi:id="31c284278072815780b8c2a5e44fe97e">
+    </attributeMappings>
+    <attributeMappings source="7ec6b05bcbfa31f04d3e326140ee0820" target="76a7c1542abcf9f84451c59329f53ba1" xmi:id="06f3aea7b7abdd86061b3e8c29d68f29">
+    </attributeMappings>
+  </tableMappings>
+  <variables xmi:id="b2acebf71f49a8494df9c54a173f6d59" name="TA_TOKEN" kind="scalarParam" type="VARCHAR" length="40" scale="0" nullable="false" defaultValue="CDS execution">
+  </variables>
+  <outputs xmi:id="24e99919a8e55a842b2f81195a9f8dd6" name="TESTFLOWGRAPH" kind="TABLE">
+    <attributes xmi:id="0becc36f56f9aac283498e585dee976d" name="SNO" type="INTEGER" length="0" scale="0" nullable="false">
+      <annotations xmi:id="f8ad51fef38e9192bbbd8142ca027c6b" key="sap.im.primaryKey" value="true">
+      </annotations>
+    </attributes>
+    <attributes xmi:id="ef8d9ed05f478633b62026ab919556a9" name="TA_RULE" type="NVARCHAR" length="200" scale="0" nullable="false">
+      <annotations xmi:id="9aab4f51655b84ecc14a6e5d0f233167" key="sap.im.primaryKey" value="true">
+      </annotations>
+    </attributes>
+    <attributes xmi:id="686c73ffae4ccc91bc41e235e490d41b" name="TA_COUNTER" type="BIGINT" length="0" scale="0" nullable="false">
+      <annotations xmi:id="c47b4934e2663ff7446bb99301fcf556" key="sap.im.primaryKey" value="true">
+      </annotations>
+    </attributes>
+    <attributes xmi:id="ef7fe6107cc32d153f599aa5a2539c35" name="TA_TOKEN" type="NVARCHAR" length="5000" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="c96ecc3da7a0fef0593d4c593ccbb63b" name="TA_LANGUAGE" type="NVARCHAR" length="2" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="80136c4c73e441c3b3ac4dff6f00c775" name="TA_TYPE" type="NVARCHAR" length="100" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="d0cf89d19740a36a5d282425bf873ff3" name="TA_NORMALIZED" type="NVARCHAR" length="5000" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="211bad3220977a88df6749f78f9857a9" name="TA_STEM" type="NVARCHAR" length="5000" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="081f0f70445c8bc78c5050d4d9b24cb8" name="TA_PARAGRAPH" type="INTEGER" length="0" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="82f411f34c71c37e892be842fe18fe35" name="TA_SENTENCE" type="INTEGER" length="0" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="fead02451db7cf4222883f754bc6c489" name="TA_CREATED_AT" type="TIMESTAMP" length="0" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="fdb6fe45657208f09309a653521d6438" name="TA_OFFSET" type="BIGINT" length="0" scale="0" nullable="true">
+    </attributes>
+    <attributes xmi:id="76a7c1542abcf9f84451c59329f53ba1" name="TA_PARENT" type="BIGINT" length="0" scale="0" nullable="true">
+    </attributes>
+  </outputs>
+</flowgraph:ContainerNode>
